@@ -1,0 +1,5 @@
+.idea/
+bower_components/
+*.iml
+node_modules/
+sql.sh

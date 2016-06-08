@@ -1,0 +1,23 @@
+{
+  "name": "elumencloud_styleguides",
+  "homepage": "https://github.com/elumen/elumencloud",
+  "authors": [
+    "eLumen INC.",
+    "Software Natura"
+  ],
+  "description": "eLumencloud StyleGuides",
+  "main": "",
+  "keywords": [
+    "StyleGuides"
+  ],
+  "license": "Privative",
+  "private": true,
+  "dependencies": {
+    "angular": "angularjs#1.4.8",
+    "bootstrap": "3.3.6",
+    "semantic": "semantic-ui#2.0.8",
+    "js-yaml": "^3.6.1",
+    "fs": "^1.0.1",
+    "highlightjs": "^9.4.0"
+  }
+}

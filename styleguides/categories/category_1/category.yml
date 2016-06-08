@@ -1,0 +1,16 @@
+name: Category 1
+elements:
+  - name: Element 1
+    description: Element 1 description
+    html: styleguides/categories/category_1/category.html
+    basecss: bower_components/bootstrap/dist/css/bootstrap.min.css
+    basejs: bower_components/bootstrap/dist/js/bootstrap.min.js
+    css:
+      - styleguides/categories/category_1/category.css
+    js:
+      - styleguides/categories/category_1/category.js
+  - name: Element 2
+    description: Element 2 description
+    html:
+    css:
+    js:

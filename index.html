@@ -1,0 +1,28 @@
+<!Doctype html />
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="bower_components/semantic/dist/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/highlightjs/styles/agate.css">
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/semantic/dist/semantic.min.js"></script>
+<title>StyleGuides</title>
+<style>
+  .hljs{
+    font-family : monospace;
+    white-space : pre;
+    font-size: medium;
+    background-color: #333 !important;
+  }
+</style>
+</head>
+
+<body ng-app='styleguides' ng-controller='styleguideController as ctrl'>
+    <div main-menu callback='ctrl.setItem' categories='ctrl.categories' class='ui vertical inverted fixed visible menu' style="height:100%; width: 300px"></div>
+    <div category-page category='ctrl.current' class='ui header' style="width: calc(100% - 300px); float: right"></div>
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/js-yaml/dist/js-yaml.min.js"></script>
+  <script src="bower_components/fs/dist/fs.min.js"></script>
+  <script src="styleguides/app.js"></script>
+  <script src="bower_components/highlightjs/highlight.pack.min.js"></script>
+</body>
+</html>

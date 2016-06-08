@@ -1,0 +1,26 @@
+<h3> {{element.name}} </h3>
+<h5> {{element.description}} </h5>
+
+
+<div id='tabs-{{element-id}}' class="ui top attached tabular menu">
+  <div class="active item"  ng-click='tab($event)' data-tab='example-{{element.id}}'>Example</div>
+  <div class="item"  ng-click='tab($event)' data-tab='html-{{element.id}}'>{{ filename(element.html)}}</div>
+  <div class="item" ng-click='tab($event)' ng-repeat='css in element.css' data-tab='css-{{element.id}}-{{$index}}'>{{ filename(css) }}</div>
+  <div class="item" ng-click='tab($event)' ng-repeat='js in element.js' data-tab='js-{{element.id}}-{{$index}}'>{{ filename(js) }}</div>
+  <div class="item"  ng-click='tab($event)' data-tab='files-{{element.id}}'>Base files</div>
+</div>
+<div class="ui bottom attached active tab segment" data-tab='example-{{element.id}}'>
+  <iframe class='ui header' style="width: 100%"></iframe>
+</div>
+<div class="ui bottom attached tab hljs html segment" data-tab='html-{{element.id}}' data-load='{{element.html}}'>
+</div>
+<div class="ui bottom attached tab hljs css segment" ng-repeat='css in element.css' data-tab='css-{{element.id}}-{{$index}}' data-load='{{css}}'>
+</div>
+<div class="ui bottom attached tab hljs js segment" ng-repeat='js in element.js' data-tab='js-{{element.id}}-{{$index}}' data-load='{{js}}'>
+</div>
+<div class="ui bottom attached tab hljs segment" data-tab='files-{{element.id}}'>
+  <span ng-repeat='css in element.basecss'>{{css}}</span>
+  <span ng-repeat='js in element.basejs'>{{js}}</span>
+</div>
+
+<br />
